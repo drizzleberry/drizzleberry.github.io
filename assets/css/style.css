@@ -25,14 +25,17 @@ header {
   font-family: 'Urbanist', Nanum Gothic, sans-serif;
 }
 
-header a {
-  color: #eee;
+header a,
+header a:visited,
+header a:hover {
+  color: #eee !important;
 }
+
 
 header h1 {
   font-size: 5rem;
   margin: 0;
-  color: eee;
+  color: #eee;
 }
 
 a {
