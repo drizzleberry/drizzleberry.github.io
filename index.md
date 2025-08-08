@@ -1,9 +1,6 @@
 ---
 layout: default
-title: Home
+title: Stories from Northline Depot
 ---
 
-Hello world!
-
-The quick brown fox jumps over the lazy dog.
-1234567890
+Episode 1: [Special Delivery](/1)
