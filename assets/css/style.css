@@ -10,10 +10,10 @@ body {
   line-height: 1.6;
 }
 
-body header {
+header {
   text-align: center;
   padding: 2rem 0;
-  color: #eee;
+  color: #eee !important;
   font-family: 'Urbanist', Nanum Gothic, sans-serif;
 }
 
