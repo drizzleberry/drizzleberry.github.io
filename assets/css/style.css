@@ -1,7 +1,8 @@
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://api.fonts.coollabs.io/css2?family=Urbanist:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 body {
-  margin: 0;
+  margin: 100px;
   padding: 2rem;
   background-color: #222;
   color: #eee;
@@ -13,6 +14,7 @@ body header {
   text-align: center;
   padding: 2rem 0;
   color: #eee;
+  font-family: 'Urbanist', Nanum Gothic, sans-serif;
 }
 
 header h1 {
