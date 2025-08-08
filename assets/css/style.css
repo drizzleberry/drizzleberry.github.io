@@ -1,4 +1,4 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url('https://api.fonts.coollabs.io/css2?family=Ubuntu&display=swap');
 @import url('https://api.fonts.coollabs.io/css2?family=Urbanist:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 #main-content {
@@ -14,7 +14,7 @@ body {
   padding: 2rem;
   background-color: #000;
   color: #eee;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Ubuntu', system-ui, sans-serif;
   line-height: 1.6;
 }
 
