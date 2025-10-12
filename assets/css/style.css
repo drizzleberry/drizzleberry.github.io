@@ -14,7 +14,7 @@ body {
   padding: 2rem;
   background-color: #000;
   color: #eee;
-  font-family: 'Ubuntu', system-ui, sans-serif;
+  font-family: 'Outfit', system-ui, sans-serif;
   line-height: 1.6;
 }
 
@@ -22,7 +22,7 @@ header {
   text-align: center;
   padding: 2rem 0;
   color: #eee;
-  font-family: 'Urbanist', Nanum Gothic, sans-serif;
+  font-family: 'Urbanist', sans-serif;
 }
 
 header a,
