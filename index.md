@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Stories from Northline Depot
+title: Home
 ---
 
 Episode 1: [Unmarked Delivery](/1)
