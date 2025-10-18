@@ -1,3 +1,9 @@
+---
+layout: default
+title: The Box
+permalink: /1/
+---
+
 Nothing ever happens at Northline Depot.
 
 I’ve been working as an intern at this hole-in-the-wall warehouse for nearly two months, and I can say with full confidence — it’s the least exciting place in the county. Unless, of course, your idea of fun involves stacking crates and inhaling dust.
