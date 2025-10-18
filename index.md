@@ -3,4 +3,4 @@ layout: default
 title: Stories from Northline Depot
 ---
 
-Episode 1: [Unmarked Delivery](/1)
+Episode 1: [The Box](/1/)
