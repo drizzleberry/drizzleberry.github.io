@@ -1,4 +1,4 @@
-<script>
+document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById('theme-toggle');
   const body = document.body;
 
@@ -21,4 +21,4 @@
       toggleButton.textContent = "Light Mode";
     }
   });
-</script>
+});
