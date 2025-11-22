@@ -10,6 +10,7 @@
   --link-visited: #6181ff;
   --hr-color: #ccc;
   --title-underline: #eee;
+  --button-border: #444;
 }
 
 body {
@@ -30,6 +31,7 @@ body.light-mode {
   --link-visited: #002ad1;
   --hr-color: #999;
   --title-underline: #111;
+  --button-border: #ddd;
 }
 
 #main-content {
@@ -95,4 +97,12 @@ hr {
   border: 0.75px solid var(--hr-color);
   width: 90%;
   margin: 1em auto;
+}
+
+button {
+  background-color: var(--content-bg);
+  color: var(--text-color);
+  border-radius: 5px;
+  border: 1px solid var(--button-border);
+
 }
