@@ -1,0 +1,8 @@
+{% if page.previous %}
+<nav class="nav-top">
+  <span> &laquo; Previous - </span>
+  <a href="{{ page.previous.url | relative_url }}">
+    {{ page.previous.title }}
+  </a>
+</nav>
+{% endif %}
