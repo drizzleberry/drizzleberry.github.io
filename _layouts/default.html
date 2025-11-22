@@ -9,8 +9,12 @@
   {% include header.html %}
 
   <div id="main-content">
+    {% include nav-top.html %}
+    <hr>
     <div class="title">{{ page.title }}</div>
     {{ content }}
+    <hr>
+    {% include nav-bottom.html}
   </div>
 
   {% include footer.html %}
