@@ -1,3 +1,9 @@
 title: Inventory 847
 description: Stories from Northline Depot
+
 # theme: minima
+
+collections:
+  episodes:
+    output: true
+    sort_by: order
