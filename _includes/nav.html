@@ -1,0 +1,31 @@
+{% if page.collection == "episodes" %}
+  {% assign sorted = site.episodes | sort: "order" %}
+  {% assign idx = 0 %}
+
+  {% for ep in sorted %}
+    {% if ep.url == page.url %}
+      {% break %}
+    {% endif %}
+    {% assign idx = idx | plus: 1 %}
+  {% endfor %}
+
+  {% assign prev = sorted[idx | minus: 1] %}
+  {% assign next = sorted[idx | plus: 1] %}
+
+  {% if prev %}
+    {% if include.position == "top" %}
+      <nav class="nav-top" style="text-align: center;">
+        &laquo; Previous - 
+        <a href="{{ prev.url | relative_url }}">{{ prev.title }}</a>
+      </nav>
+    {% endif %}
+  {% endif %}
+
+  {% if next %}
+    {% if include.position == "bottom" %}
+      <nav class="nav-bottom" style="text-align: center;">
+        <a href="{{ next.url | relative_url }}">{{ next.title }}</a> - Next &raquo;
+      </nav>
+    {% endif %}
+  {% endif %}
+{% endif %}
