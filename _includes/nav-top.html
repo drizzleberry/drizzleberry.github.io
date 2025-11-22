@@ -1,8 +1,11 @@
-{% if page.previous %}
-<nav class="nav-top" style="text-align: center;">
-  <span> &laquo; Previous - </span>
-  <a href="{{ page.previous.url | relative_url }}">
-    {{ page.previous.title }}
-  </a>
-</nav>
+{% assign sorted_episodes = site.episodes | sort: "order" %}
+{% assign index = sorted_episodes | index_of: page %}
+{% assign prev_index = index | minus: 1 %}
+
+{% if prev_index >= 0 %}
+  {% assign prev_episode = sorted_episodes[prev_index] %}
+  <nav class="nav-top" style="text-align: center; margin-bottom: 1rem;">
+    &laquo; Previous - 
+    <a href="{{ prev_episode.url | relative_url }}">{{ prev_episode.title }}</a>
+  </nav>
 {% endif %}
