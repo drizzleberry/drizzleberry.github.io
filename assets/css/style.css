@@ -70,3 +70,9 @@ a:hover {
 a:visited {
   color: #a82016;
 }
+
+hr {
+  border: 0.75px solid #ccc;
+  width: 90%;
+  margin: 1em auto;
+}
