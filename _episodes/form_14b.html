@@ -3,4 +3,35 @@ layout: default
 title: Form 14B
 permalink: /3/
 order: 3
+pdf_url: /files/form_14b_src.pdf
 ---
+
+<div id="pdf-container"></div>
+
+<!-- PDF.js library -->
+<script src="{{ '/assets/pdfjs/pdf.js' | relative_url }}"></script>
+
+<script>
+  const url = "{{ page.pdf_url | relative_url }}"; // Pass the PDF URL as a variable
+
+  const loadingTask = pdfjsLib.getDocument(url);
+  loadingTask.promise.then(pdf => {
+    const container = document.getElementById('pdf-container');
+
+    for (let i = 1; i <= pdf.numPages; i++) {
+      pdf.getPage(i).then(page => {
+        const viewport = page.getViewport({ scale: 1 }); // initial scale
+        const scale = container.clientWidth / viewport.width; // fit width
+        const scaledViewport = page.getViewport({ scale: scale });
+
+        const canvas = document.createElement('canvas');
+        canvas.width = scaledViewport.width;
+        canvas.height = scaledViewport.height;
+        container.appendChild(canvas);
+
+        page.render({ canvasContext: canvas.getContext('2d'), viewport: scaledViewport });
+      });
+    }
+  });
+</script>
+
