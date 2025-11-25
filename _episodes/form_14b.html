@@ -5,32 +5,31 @@ permalink: /3/
 order: 3
 pdf_url: /files/form_14b_src.pdf
 ---
+
 <div id="pdf-container"></div>
 
+<script src="{{ '/assets/pdfjs/pdf.js' | relative_url }}"></script>
 <script>
+pdfjsLib.GlobalWorkerOptions.workerSrc = "{{ '/assets/pdfjs/pdf.worker.js' | relative_url }}";
+
 document.addEventListener("DOMContentLoaded", function() {
   const url = "{{ page.pdf_url | relative_url }}";
   const container = document.getElementById('pdf-container');
 
-  const loadingTask = pdfjsLib.getDocument(url);
-  loadingTask.promise.then(pdf => {
+  pdfjsLib.getDocument(url).promise.then(pdf => {
     for (let i = 1; i <= pdf.numPages; i++) {
       pdf.getPage(i).then(page => {
-        // initial viewport
         const viewport = page.getViewport({ scale: 1 });
-        const scale = container.clientWidth / viewport.width; // fit width
+        const scale = container.clientWidth / viewport.width;
         const scaledViewport = page.getViewport({ scale: scale });
 
         const canvas = document.createElement('canvas');
         canvas.width = scaledViewport.width;
         canvas.height = scaledViewport.height;
-        container.appendChild(canvas);
 
-        page.render({ canvasContext: canvas.getContext('2d'), viewport: scaledViewport });
-      });
+        container.appendChild(canvas);
+      }
     }
-  }).catch(err => {
-    console.error("Error loading PDF:", err);
-  });
-});
+  }
+}
 </script>
