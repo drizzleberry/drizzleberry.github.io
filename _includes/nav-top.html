@@ -3,7 +3,7 @@
 
 {% assign prev = nil %}
 {% for ep in episodes %}
-  {% if ep.order < current_order %}
+  {% if ep.order < current_order and prev == nil %}
     {% assign prev = ep %}
   {% endif %}
 {% endfor %}
