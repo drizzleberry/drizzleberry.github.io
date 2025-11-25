@@ -10,6 +10,7 @@ pdf_url: /files/form_14b_src.pdf
 
 <script src="{{ '/assets/pdfjs/pdf.js' | relative_url }}"></script>
 <script>
+// Import pdf.js
 pdfjsLib.GlobalWorkerOptions.workerSrc = "{{ '/assets/pdfjs/pdf.worker.js' | relative_url }}";
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -17,19 +18,28 @@ document.addEventListener("DOMContentLoaded", function() {
   const container = document.getElementById('pdf-container');
 
   pdfjsLib.getDocument(url).promise.then(pdf => {
-    for (let i = 1; i <= pdf.numPages; i++) {
+    for (let i = 1; i <= pdf.numPages; i++) { // Loop for every page
       pdf.getPage(i).then(page => {
+        // Create viewport
         const viewport = page.getViewport({ scale: 1 });
         const scale = container.clientWidth / viewport.width;
         const scaledViewport = page.getViewport({ scale: scale });
 
+        // Create canvas for each page
         const canvas = document.createElement('canvas');
         canvas.width = scaledViewport.width;
         canvas.height = scaledViewport.height;
 
         container.appendChild(canvas);
-      }
-    }
-  }
-}
+
+        // Render page content
+        const renderContext = {
+          canvasContext: canvas.getContext('2d'),
+          viewport: scaledViewport
+        };
+        page.render(renderContext);
+      });
+    });
+  });
+});
 </script>
