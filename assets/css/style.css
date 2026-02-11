@@ -94,14 +94,3 @@ button {
   border: 1px solid var(--button-border);
   font-size: 100%;
 }
-
-@media screen and (max-width: 768px) {
-  #main-content {
-    max-width: 100%;
-  }
-
-  html, body {
-    font-size: 20px;
-    padding: 0;
-  }
-}
