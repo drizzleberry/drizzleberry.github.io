@@ -98,10 +98,10 @@ button {
 @media screen and (max-width: 768px) {
   #main-content {
     max-width: 100%;
-    padding: 2em 5px auto;
   }
 
   html, body {
-    font-size: 16px;
+    font-size: 20px;
+    padding: 0;
   }
 }
