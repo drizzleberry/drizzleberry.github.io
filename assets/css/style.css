@@ -100,4 +100,8 @@ button {
     max-width: 100%;
     padding: 2em 5px auto;
   }
+
+  html, body {
+    font-size: 16px;
+  }
 }
