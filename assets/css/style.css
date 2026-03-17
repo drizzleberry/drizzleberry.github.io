@@ -4,6 +4,7 @@
 :root {
   --bg-color: #000;
   --content-bg: #222;
+  --blockquote-bg: #444;
   --text-color: #eee;
   --header-color: #eee;
   --link-color: #3399ff;
@@ -25,6 +26,7 @@ body {
 body.light-mode {
   --bg-color: #f9f9f9;
   --content-bg: #fff;
+  --blockquote-bg: #f9f9f9;
   --text-color: #111;
   --header-color: #111;
   --link-color: #0066cc;
@@ -93,4 +95,12 @@ button {
   border-radius: 5px;
   border: 1px solid var(--button-border);
   font-size: 100%;
+}
+
+blockquote, 
+div.blockquote {
+  font-style: italic;
+  width: 90%
+  margin: 1em 1em auto;
+  background-color: var(--blockquote-bg);
 }
