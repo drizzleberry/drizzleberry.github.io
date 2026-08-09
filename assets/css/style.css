@@ -80,9 +80,14 @@ header h2 {
   color: var(--header-color);
 }
 
+header div.site-nav {
+  font-size: 1.5rem;
+  margin: auto;
+}
+
 .title { 
   text-align: center; 
-  font-size: 2.5em; 
+  font-size: 2em; 
   position: relative; 
   padding: 1rem; 
 }
@@ -112,6 +117,12 @@ button {
   border-radius: 5px;
   border: 1px solid var(--button-border);
   font-size: 100%;
+}
+
+button #light-mode {
+  position: absolute; 
+  top: 1rem; 
+  right: 1rem;
 }
 
 blockquote, 
