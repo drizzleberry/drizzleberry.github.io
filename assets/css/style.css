@@ -24,6 +24,10 @@ body {
   line-height: 1.6;
 }
 
+body p {
+  margin-bottom: 0.75rem;
+}
+
 body.light-mode {
   --bg-color: #f9f9f9;
   --content-bg: #fff;
