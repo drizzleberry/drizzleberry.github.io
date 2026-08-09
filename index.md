@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Stories from Northline Depot
+title: Read the Series
 ---
 
 This page is under construction!
