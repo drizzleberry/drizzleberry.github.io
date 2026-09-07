@@ -8,7 +8,7 @@
   --text-color: #eee;
   --header-color: #eee;
   --link-color: #3399ff;
-  --link-visited: #6181ff;
+  --link-visited: #787bff;
   --hr-color: #ccc;
   --title-underline: #eee;
   --button-border: #444;
@@ -36,8 +36,8 @@ body.light-mode {
   --blockquote-bg: #f9f9f9;
   --text-color: #111;
   --header-color: #111;
-  --link-color: #0066cc;
-  --link-visited: #002ad1;
+  --link-color: #0052a8;
+  --link-visited: #373991;
   --hr-color: #999;
   --title-underline: #111;
   --button-border: #ddd;
@@ -98,17 +98,10 @@ div.title {
   padding: 0; 
 }
 
-a {
-  color: var(--link-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:visited {
-  color: var(--link-visited);
+div.episode-nav {
+  align: center;
+  font-size: 0.85em;
+  margin: 1em auto;
 }
 
 /* ELEMENTS */
@@ -142,4 +135,17 @@ div.blockquote {
   width: 90%
   margin: 1em 1em auto;
   background-color: var(--blockquote-bg);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link-visited);
 }
