@@ -9,6 +9,7 @@
   --header-color: #eee;
   --link-color: #3399ff;
   --link-visited: #787bff;
+  --link-nonexistent: #adadad;
   --hr-color: #ccc;
   --title-underline: #eee;
   --button-border: #444;
@@ -38,6 +39,7 @@ body.light-mode {
   --header-color: #111;
   --link-color: #0052a8;
   --link-visited: #373991;
+  --link-nonexistent: #6e6e6e;
   --hr-color: #999;
   --title-underline: #111;
   --button-border: #ddd;
@@ -148,4 +150,8 @@ a:hover {
 
 a:visited {
   color: var(--link-visited);
+}
+
+a:not([href]) {
+  color: var(--link-nonexistent);
 }
