@@ -4,7 +4,9 @@ title: Pandora's Box, Part 1
 permalink: /1/
 ---
 
-| Episode 1 | [Next](/2/) >>
+<div align="center">
+\| Episode 1 \| [Next](/2/) >>
+</div>
 
 Nora Jennings swung the door into the Northline Depot break room, her other hand cradling an open laptop that hid her face. She adjusted her glasses, not looking up.
 
