@@ -4,7 +4,7 @@ title: Pandora's Box, Part 1
 permalink: /1/
 ---
 
-<div align="center">
+<div class="episode-nav">
 \| Episode 1 \| [Next](/2/) >>
 </div>
 
