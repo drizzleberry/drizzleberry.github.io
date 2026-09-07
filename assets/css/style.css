@@ -14,6 +14,8 @@
   --button-border: #444;
 }
 
+/* PAGE STYLE OVERALL */
+
 body {
   margin: 0 auto;
   padding: 2rem;
@@ -55,6 +57,8 @@ body.light-mode {
   max-width: 100%;
 }
 
+/* SITE HEADER */
+
 header {
   text-align: center;
   padding: 2rem 0;
@@ -85,6 +89,8 @@ header div.site-nav {
   margin: auto;
 }
 
+/* PAGE CONTENT */
+
 div.title { 
   text-align: center; 
   font-size: 2em; 
@@ -103,6 +109,11 @@ a:hover {
 
 a:visited {
   color: var(--link-visited);
+}
+
+/* ELEMENTS */
+strong, b {
+  font-weight: 500; 
 }
 
 hr {
