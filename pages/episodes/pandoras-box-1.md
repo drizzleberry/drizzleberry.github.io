@@ -165,3 +165,7 @@ As Marty walked off, there was the sound of liquid sloshing and swirling down th
 "It had probably been in that box for years," she said, "if not decades. Someone must've put it in there to keep the liquid from getting everywhere, and the built-up pressure caused it to explode."
 
 "Great theory, kid. Now get cleaning." Marty turned the handle. "We _will_ figure this out. But as long as that sink can delay the water building up, I want my break room tidy and slime-free. The sponge and paper towels are in the closet."
+
+<div class="episode-nav">
+| Episode 1 | <a href="/2/">Next</a> >>
+</div>
