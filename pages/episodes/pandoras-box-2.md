@@ -5,7 +5,7 @@ permalink: /2/
 ---
 
 <div class="episode-nav">
-« <a href="/1/">Previous</a> | Episode 2 | Next »
+« <a href="/1/">Previous</a> | Episode 2 | <a>Next</a> »
 </div>
 
 "It still smells weird in here, Jamie."
