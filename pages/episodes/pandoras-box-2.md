@@ -4,6 +4,10 @@ title: Pandora's Box, Part 2
 permalink: /2/
 ---
 
+<div class="episode-nav">
+| Episode 1 | <a href="/2/">Next</a> >>
+</div>
+
 "It still smells weird in here, Jamie."
 
 Marty lazed in one of the break room chairs, leaning precariously on two legs with his back against the wall. In the sink, the black matte orb they only knew as "#847" steadily exuded an ooze of brownish-gray watery liquid, festering in the pool of its own waste building up around it. Jamie had just taken her gloves off and thrown them away, along with all the paper towels and bleach she used to wipe down the floor and table. The object had made a huge mess, and their best idea to contain its mess had been to leave it in the basin until further notice.
