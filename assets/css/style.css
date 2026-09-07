@@ -50,9 +50,9 @@ body.light-mode {
 }
 
 #page-content {
-  padding: 0;
+  padding: 0 0.25em;
   margin: auto;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 header {
