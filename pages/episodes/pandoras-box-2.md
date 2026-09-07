@@ -5,7 +5,7 @@ permalink: /2/
 ---
 
 <div class="episode-nav">
-| Episode 1 | <a href="/2/">Next</a> >>
+« <a href="/1/">Previous</a> | Episode 2 | Next »
 </div>
 
 "It still smells weird in here, Jamie."
@@ -105,3 +105,7 @@ An anomaly that had fallen into the custody of possibly the least qualified peop
 "We, uh, I—" she stammered. "I don't know."
 
 Nora finally hit Ctrl+S, and closed her laptop. "I guess if none of you can figure something out," she mumbled, "I do have one idea."
+
+<div class="episode-nav">
+« <a href="/1/">Previous</a> | Episode 2 | Next »
+</div>
