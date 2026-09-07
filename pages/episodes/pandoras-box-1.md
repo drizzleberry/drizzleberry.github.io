@@ -5,7 +5,7 @@ permalink: /1/
 ---
 
 <div class="episode-nav">
-\| Episode 1 \| [Next](/2/) >>
+| Episode 1 | <a href="/2/">Next</a> >>
 </div>
 
 Nora Jennings swung the door into the Northline Depot break room, her other hand cradling an open laptop that hid her face. She adjusted her glasses, not looking up.
