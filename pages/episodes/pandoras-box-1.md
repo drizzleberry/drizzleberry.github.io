@@ -5,7 +5,7 @@ permalink: /1/
 ---
 
 <div class="episode-nav">
-| Episode 1 | <a href="/2/">Next</a> >>
+Inventory 847 | Episode 1 | <a href="/2/">Next</a> »
 </div>
 
 Nora Jennings swung the door into the Northline Depot break room, her other hand cradling an open laptop that hid her face. She adjusted her glasses, not looking up.
@@ -167,5 +167,5 @@ As Marty walked off, there was the sound of liquid sloshing and swirling down th
 "Great theory, kid. Now get cleaning." Marty turned the handle. "We _will_ figure this out. But as long as that sink can delay the water building up, I want my break room tidy and slime-free. The sponge and paper towels are in the closet."
 
 <div class="episode-nav">
-| Episode 1 | <a href="/2/">Next</a> >>
+Inventory 847 | Episode 1 | <a href="/2/">Next</a> »
 </div>
