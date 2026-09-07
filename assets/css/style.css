@@ -99,7 +99,7 @@ div.title {
 }
 
 div.episode-nav {
-  align: center;
+  text-align: center;
   font-size: 0.85em;
   margin: 1em auto;
 }
