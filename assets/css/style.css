@@ -85,11 +85,11 @@ header div.site-nav {
   margin: auto;
 }
 
-.title { 
+div.title { 
   text-align: center; 
   font-size: 2em; 
   position: relative; 
-  padding: 1rem; 
+  padding: 0; 
 }
 
 a {
