@@ -12,6 +12,6 @@ Northline Depot's database is deleted, and Jamie discovers something she really 
 
 The crew gets together to discuss what to do with Jamie's bizarre discovery.
 
-**Episode 3:** [*Coming October 10*](/)
+**Episode 3:** <a><i>Coming October 10</i></a>
 
 
