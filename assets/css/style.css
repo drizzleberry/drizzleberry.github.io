@@ -32,8 +32,8 @@ body p {
 }
 
 body.light-mode {
-  --bg-color: #ebebeb;
-  --content-bg: #f0f0f0;
+  --bg-color: #d9d9d9;
+  --content-bg: #e6e6e6;
   --blockquote-bg: #f9f9f9;
   --text-color: #111;
   --header-color: #111;
