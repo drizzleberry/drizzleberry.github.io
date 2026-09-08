@@ -155,3 +155,20 @@ a:visited {
 a:not([href]) {
   color: var(--link-nonexistent);
 }
+
+/* MOBILE VIEW */
+@media screen width < 750px {
+  #main-content {
+    max-width: 100%;
+    margin: 100px auto;
+    padding: 2rem 1rem;
+    background-color: var(--content-bg);
+    border-radius: 8px;
+  }
+  
+  #page-content {
+    padding: 0;
+    margin: auto;
+    max-width: 100%;
+  }
+}
