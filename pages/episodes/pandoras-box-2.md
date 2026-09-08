@@ -108,5 +108,5 @@ An anomaly that had fallen into the custody of possibly the least qualified peop
 Nora finally hit Ctrl+S, and closed her laptop. "I guess if none of you can figure something out," she mumbled, "I do have one idea."
 
 <div class="episode-nav">
-« <a href="/1/">Previous</a> | Episode 2 | Next »
+« <a href="/1/">Previous</a> | Episode 2 | <a>Next</a> »
 </div>
