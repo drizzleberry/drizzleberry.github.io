@@ -15,9 +15,11 @@
     <hr>
     <div id="page-content">
     {{ content }}
+      {% if page.date %}
       <div style="text-align: center">
       Published {{ page.date }}.
       </div>
+      {% endif %}
     </div>
     <hr>
   </div>
