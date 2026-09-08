@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --bg-color: #000;
+  --bg-color: #0f0f0f;
   --content-bg: #222;
   --blockquote-bg: #444;
-  --text-color: #eee;
-  --header-color: #eee;
+  --text-color: #e0e0e0;
+  --header-color: #e0e0e0;
   --link-color: #3399ff;
   --link-visited: #787bff;
   --link-nonexistent: #969696;
