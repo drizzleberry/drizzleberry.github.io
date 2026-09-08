@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: episode
 title: Pandora's Box, Part 2
 permalink: /2/
 date: 2026 Sep 10
