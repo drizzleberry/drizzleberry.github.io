@@ -2,6 +2,7 @@
 layout: default
 title: Pandora's Box, Part 1
 permalink: /1/
+date: 2026 Sep 10
 ---
 
 <div class="episode-nav">
