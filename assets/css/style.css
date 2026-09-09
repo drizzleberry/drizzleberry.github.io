@@ -126,6 +126,7 @@ button {
   border-radius: 5px;
   border: 1px solid var(--button-border);
   font-size: 100%;
+  font-family: 'Outfit', system-ui, sans-serif;
 }
 
 button div.theme-toggle {
@@ -351,4 +352,10 @@ padding-left: 0.75rem;
 align-items: flex-start;
 flex-direction: column;
 }
+}
+
+.comment-form-bottom button {
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-size: 1rem;
+  color: var(--link-color);
 }
