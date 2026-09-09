@@ -1,8 +1,132 @@
-<div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="0287949f-ede9-4151-891e-ec7335b98029"
-  data-page-id="{{ page.url }}"
-  data-page-url="{{ page.url }}"
-  data-page-title="{{ page.title | escape }}"
-></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<section id="comments" class="comments">
+  <h2>Comments</h2>
+
+  <div id="comments-list">
+    <p>Loading comments...</p>
+  </div>
+
+  <form id="comment-form">
+    <input
+      type="text"
+      id="comment-name"
+      name="name"
+      placeholder="Name"
+      maxlength="100"
+      required
+    >
+
+    <textarea
+      id="comment-body"
+      name="body"
+      placeholder="Write a comment..."
+      maxlength="5000"
+      required
+    ></textarea>
+
+    <button type="submit">Post comment</button>
+
+    <p id="comment-status"></p>
+  </form>
+</section>
+
+<script>
+(function () {
+  const postId = {{ page.url | jsonify }};
+
+  const list = document.getElementById("comments-list");
+  const form = document.getElementById("comment-form");
+  const status = document.getElementById("comment-status");
+
+  async function loadComments() {
+    try {
+      const response = await fetch(
+        "/comments?post=" + encodeURIComponent(postId)
+      );
+
+      if (!response.ok) {
+        throw new Error();
+      }
+
+      const comments = await response.json();
+
+      list.innerHTML = "";
+
+      if (comments.length === 0) {
+        list.innerHTML = "<p>No comments yet. Be the first!</p>";
+        return;
+      }
+
+      comments.forEach(function (comment) {
+        const article = document.createElement("article");
+        article.className = "comment";
+
+        const header = document.createElement("div");
+        header.className = "comment-header";
+
+        const name = document.createElement("strong");
+        name.textContent = comment.name;
+
+        const date = document.createElement("time");
+        date.textContent = new Date(
+          comment.created_at
+        ).toLocaleDateString();
+
+        header.appendChild(name);
+        header.appendChild(date);
+
+        const body = document.createElement("p");
+        body.textContent = comment.body;
+
+        article.appendChild(header);
+        article.appendChild(body);
+
+        list.appendChild(article);
+      });
+
+    } catch (error) {
+      list.innerHTML = "<p>Unable to load comments.</p>";
+    }
+  }
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    status.textContent = "Posting...";
+
+    const name = document.getElementById("comment-name").value.trim();
+    const body = document.getElementById("comment-body").value.trim();
+
+    try {
+      const response = await fetch("/comments", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          post_id: postId,
+          name: name,
+          body: body
+        })
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          result.error || "Unable to post comment."
+        );
+      }
+
+      form.reset();
+      status.textContent = "Comment posted!";
+
+      await loadComments();
+
+    } catch (error) {
+      status.textContent = error.message;
+    }
+  });
+
+  loadComments();
+})();
+</script>
