@@ -39,11 +39,11 @@ body.light-mode {
   --blockquote-bg: #f9f9f9;
   --text-color: #111;
   --header-color: #111;
-  --link-color: #0069d6;
-  --link-visited: #3B3DB3;
-  --link-nonexistent: #707070;
+  --link-color: #0059b8;
+  --link-visited: #3b3db3;
+  --link-nonexistent: #5e5e5e;
   --hr-color: #999;
-  --username-color: #2c8a65;
+  --username-color: #18694a;
   --title-underline: #111;
   --button-border: #ddd;
 }
