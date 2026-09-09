@@ -1,17 +1,23 @@
 <section id="comments" class="comments">
-  <h2>Comments</h2>
+  <div class="comments-title">
+    <h2>Comments</h2>
+    <span id="comment-count"></span>
+  </div>
 
   <div id="comments-list">
-    <p>Loading comments...</p>
+    <p class="comments-message">Loading comments...</p>
   </div>
 
   <form id="comment-form">
+    <div class="comment-form-title">Leave a comment</div>
+
     <input
       type="text"
       id="comment-name"
       name="name"
-      placeholder="Name"
+      placeholder="Username"
       maxlength="100"
+      autocomplete="nickname"
       required
     >
 
@@ -23,7 +29,17 @@
       required
     ></textarea>
 
-    <button type="submit">Post comment</button>
+    <input
+      type="hidden"
+      id="comment-parent"
+      name="parent_id"
+      value=""
+    >
+
+    <div class="comment-form-bottom">
+      <span id="replying-to"></span>
+      <button type="submit">Post comment</button>
+    </div>
 
     <p id="comment-status"></p>
   </form>
@@ -36,6 +52,68 @@
   const list = document.getElementById("comments-list");
   const form = document.getElementById("comment-form");
   const status = document.getElementById("comment-status");
+  const parentInput = document.getElementById("comment-parent");
+  const replyingTo = document.getElementById("replying-to");
+  const count = document.getElementById("comment-count");
+
+  function formatDate(timestamp) {
+    const date = new Date(timestamp);
+
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+
+    return year + "-" + month + "-" + day;
+  }
+
+  function makeComment(comment, isReply) {
+    const article = document.createElement("article");
+    article.className = "comment";
+
+    if (isReply) {
+      article.classList.add("comment-reply-item");
+    }
+
+    const header = document.createElement("div");
+    header.className = "comment-header";
+
+    const username = document.createElement("strong");
+    username.className = "comment-username";
+    username.textContent = comment.name;
+
+    const date = document.createElement("time");
+    date.className = "comment-date";
+    date.textContent = formatDate(comment.created_at);
+
+    header.appendChild(username);
+    header.appendChild(date);
+
+    const body = document.createElement("div");
+    body.className = "comment-body";
+    body.textContent = comment.body;
+
+    const footer = document.createElement("div");
+    footer.className = "comment-footer";
+
+    const replyButton = document.createElement("button");
+    replyButton.type = "button";
+    replyButton.className = "comment-reply";
+    replyButton.textContent = "Reply";
+
+    replyButton.addEventListener("click", function () {
+      parentInput.value = comment.id;
+      replyingTo.textContent = "Replying to " + comment.name;
+      document.getElementById("comment-body").focus();
+    });
+
+    footer.appendChild(replyButton);
+
+    article.appendChild(header);
+    article.appendChild(body);
+    article.appendChild(footer);
+
+    return article;
+  }
 
   async function loadComments() {
     try {
@@ -44,47 +122,51 @@
       );
 
       if (!response.ok) {
-        throw new Error();
+        throw new Error("Unable to load comments.");
       }
 
       const comments = await response.json();
 
       list.innerHTML = "";
 
+      count.textContent =
+        comments.length +
+        (comments.length === 1 ? " comment" : " comments");
+
       if (comments.length === 0) {
-        list.innerHTML = "<p>No comments yet. Be the first!</p>";
+        const empty = document.createElement("p");
+        empty.className = "comments-message";
+        empty.textContent = "No comments yet. Be the first!";
+        list.appendChild(empty);
         return;
       }
 
-      comments.forEach(function (comment) {
-        const article = document.createElement("article");
-        article.className = "comment";
+      const topLevel = comments.filter(function (comment) {
+        return comment.parent_id === null;
+      });
 
-        const header = document.createElement("div");
-        header.className = "comment-header";
+      topLevel.forEach(function (comment) {
+        list.appendChild(makeComment(comment, false));
 
-        const name = document.createElement("strong");
-        name.textContent = comment.name;
+        const replies = comments.filter(function (reply) {
+          return String(reply.parent_id) === String(comment.id);
+        });
 
-        const date = document.createElement("time");
-        date.textContent = new Date(
-          comment.created_at
-        ).toLocaleDateString();
-
-        header.appendChild(name);
-        header.appendChild(date);
-
-        const body = document.createElement("p");
-        body.textContent = comment.body;
-
-        article.appendChild(header);
-        article.appendChild(body);
-
-        list.appendChild(article);
+        replies.forEach(function (reply) {
+          list.appendChild(makeComment(reply, true));
+        });
       });
 
     } catch (error) {
-      list.innerHTML = "<p>Unable to load comments.</p>";
+      console.error(error);
+
+      list.innerHTML = "";
+
+      const errorMessage = document.createElement("p");
+      errorMessage.className = "comments-message";
+      errorMessage.textContent = "Unable to load comments.";
+
+      list.appendChild(errorMessage);
     }
   }
 
@@ -93,8 +175,17 @@
 
     status.textContent = "Posting...";
 
-    const name = document.getElementById("comment-name").value.trim();
-    const body = document.getElementById("comment-body").value.trim();
+    const name = document
+      .getElementById("comment-name")
+      .value
+      .trim();
+
+    const body = document
+      .getElementById("comment-body")
+      .value
+      .trim();
+
+    const parentId = parentInput.value || null;
 
     try {
       const response = await fetch("/comments", {
@@ -105,7 +196,8 @@
         body: JSON.stringify({
           post_id: postId,
           name: name,
-          body: body
+          body: body,
+          parent_id: parentId
         })
       });
 
@@ -118,11 +210,16 @@
       }
 
       form.reset();
+
+      parentInput.value = "";
+      replyingTo.textContent = "";
+
       status.textContent = "Comment posted!";
 
       await loadComments();
 
     } catch (error) {
+      console.error(error);
       status.textContent = error.message;
     }
   });
