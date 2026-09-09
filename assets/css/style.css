@@ -213,10 +213,6 @@ flex-direction: column;
 padding: 1.25rem 0;
 }
 
-.comment:first-child {
-border-top: none;
-}
-
 .comment-header {
 display: flex;
 align-items: baseline;
