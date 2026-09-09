@@ -37,7 +37,18 @@
     >
 
     <div class="comment-form-bottom">
-      <span id="replying-to"></span>
+      <div class="reply-controls">
+        <span id="replying-to"></span>
+        <button
+          type="button"
+          id="cancel-reply"
+          class="cancel-reply"
+          hidden
+        >
+          Cancel reply
+        </button>
+      </div>
+
       <button type="submit">Post comment</button>
     </div>
 
@@ -54,6 +65,7 @@
   const status = document.getElementById("comment-status");
   const parentInput = document.getElementById("comment-parent");
   const replyingTo = document.getElementById("replying-to");
+  const cancelReply = document.getElementById("cancel-reply");
   const count = document.getElementById("comment-count");
 
   function formatDate(timestamp) {
@@ -65,6 +77,36 @@
 
     return year + "-" + month + "-" + day;
   }
+
+  function startReply(comment) {
+    /*
+     * If this is already a reply, use its original parent.
+     * This keeps replies at only one level.
+     */
+    const parentId =
+      comment.parent_id !== null
+        ? comment.parent_id
+        : comment.id;
+
+    parentInput.value = parentId;
+
+    replyingTo.textContent =
+      "Replying to " + comment.name;
+
+    cancelReply.hidden = false;
+
+    document.getElementById("comment-body").focus();
+  }
+
+  function clearReply() {
+    parentInput.value = "";
+    replyingTo.textContent = "";
+    cancelReply.hidden = true;
+  }
+
+  cancelReply.addEventListener("click", function () {
+    clearReply();
+  });
 
   function makeComment(comment, isReply) {
     const article = document.createElement("article");
@@ -101,9 +143,7 @@
     replyButton.textContent = "Reply";
 
     replyButton.addEventListener("click", function () {
-      parentInput.value = comment.id;
-      replyingTo.textContent = "Replying to " + comment.name;
-      document.getElementById("comment-body").focus();
+      startReply(comment);
     });
 
     footer.appendChild(replyButton);
@@ -141,6 +181,9 @@
         return;
       }
 
+      /*
+       * Show top-level comments first.
+       */
       const topLevel = comments.filter(function (comment) {
         return comment.parent_id === null;
       });
@@ -148,6 +191,10 @@
       topLevel.forEach(function (comment) {
         list.appendChild(makeComment(comment, false));
 
+        /*
+         * Then show replies immediately underneath
+         * their parent.
+         */
         const replies = comments.filter(function (reply) {
           return String(reply.parent_id) === String(comment.id);
         });
@@ -211,8 +258,7 @@
 
       form.reset();
 
-      parentInput.value = "";
-      replyingTo.textContent = "";
+      clearReply();
 
       status.textContent = "Comment posted!";
 
