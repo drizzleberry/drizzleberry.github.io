@@ -110,9 +110,9 @@ div.episode-nav {
 }
 
 div.update {
-  max-width: 75%;
+  width: 75%;
   margin: 100px auto;
-  padding: 1rem;
+  padding: 18px;
   background-color: var(--content-bg);
   font-size: 1.1rem;
   border-radius: 8px;
