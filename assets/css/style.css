@@ -109,7 +109,17 @@ div.episode-nav {
   margin: 1em auto;
 }
 
+div.update {
+  max-width: 80%;
+  margin: 100px auto;
+  padding: 1rem;
+  background-color: var(--content-bg);
+  font-size: 1.1rem;
+  border-radius: 8px;
+}
+
 /* ELEMENTS */
+
 strong, b {
   font-weight: 500; 
 }
