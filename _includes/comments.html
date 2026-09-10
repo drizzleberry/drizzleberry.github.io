@@ -1,0 +1,275 @@
+<section id="comments" class="comments">
+  <div class="comments-title">
+    <h2>Comments</h2>
+    <span id="comment-count"></span>
+  </div>
+
+  <div id="comments-list">
+    <p class="comments-message">Loading comments...</p>
+  </div>
+
+  <form id="comment-form">
+    <div class="comment-form-title">Leave a comment</div>
+
+    <input
+      type="text"
+      id="comment-name"
+      name="name"
+      placeholder="Name..."
+      maxlength="100"
+      autocomplete="nickname"
+      required
+    >
+
+    <textarea
+      id="comment-body"
+      name="body"
+      placeholder="Write a comment..."
+      maxlength="5000"
+      required
+    ></textarea>
+
+    <input
+      type="hidden"
+      id="comment-parent"
+      name="parent_id"
+      value=""
+    >
+
+    <div class="comment-form-bottom">
+      <div class="reply-controls">
+        <span id="replying-to"></span>
+        <button
+          type="button"
+          id="cancel-reply"
+          class="cancel-reply"
+          hidden
+        >
+          Cancel reply
+        </button>
+      </div>
+
+      <button type="submit">Post comment</button>
+    </div>
+
+    <p id="comment-status"></p>
+  </form>
+</section>
+
+<script>
+(function () {
+  const postId = {{ page.url | jsonify }};
+
+  const list = document.getElementById("comments-list");
+  const form = document.getElementById("comment-form");
+  const status = document.getElementById("comment-status");
+  const parentInput = document.getElementById("comment-parent");
+  const replyingTo = document.getElementById("replying-to");
+  const cancelReply = document.getElementById("cancel-reply");
+  const count = document.getElementById("comment-count");
+
+  function formatDate(timestamp) {
+    const date = new Date(timestamp);
+
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+
+    return year + "-" + month + "-" + day;
+  }
+
+  function startReply(comment) {
+    /*
+     * If this is already a reply, use its original parent.
+     * This keeps replies at only one level.
+     */
+    const parentId =
+      comment.parent_id !== null
+        ? comment.parent_id
+        : comment.id;
+
+    parentInput.value = parentId;
+
+    replyingTo.textContent =
+      "Replying to " + comment.name;
+
+    cancelReply.hidden = false;
+
+    document.getElementById("comment-body").focus();
+  }
+
+  function clearReply() {
+    parentInput.value = "";
+    replyingTo.textContent = "";
+    cancelReply.hidden = true;
+  }
+
+  cancelReply.addEventListener("click", function () {
+    clearReply();
+  });
+
+  function makeComment(comment, isReply) {
+    const article = document.createElement("article");
+    article.className = "comment";
+
+    if (isReply) {
+      article.classList.add("comment-reply-item");
+    }
+
+    const header = document.createElement("div");
+    header.className = "comment-header";
+
+    const username = document.createElement("strong");
+    username.className = "comment-username";
+    username.textContent = comment.name;
+
+    const date = document.createElement("time");
+    date.className = "comment-date";
+    date.textContent = formatDate(comment.created_at);
+
+    header.appendChild(username);
+    header.appendChild(date);
+
+    const body = document.createElement("div");
+    body.className = "comment-body";
+    body.textContent = comment.body;
+
+    const footer = document.createElement("div");
+    footer.className = "comment-footer";
+
+    const replyButton = document.createElement("button");
+    replyButton.type = "button";
+    replyButton.className = "comment-reply";
+    replyButton.textContent = "Reply";
+
+    replyButton.addEventListener("click", function () {
+      startReply(comment);
+    });
+
+    footer.appendChild(replyButton);
+
+    article.appendChild(header);
+    article.appendChild(body);
+    article.appendChild(footer);
+
+    return article;
+  }
+
+  async function loadComments() {
+    try {
+      const response = await fetch(
+        "/comments?post=" + encodeURIComponent(postId)
+      );
+
+      if (!response.ok) {
+        throw new Error("Unable to load comments.");
+      }
+
+      const comments = await response.json();
+
+      list.innerHTML = "";
+
+      count.textContent =
+        comments.length +
+        (comments.length === 1 ? " comment" : " comments");
+
+      if (comments.length === 0) {
+        const empty = document.createElement("p");
+        empty.className = "comments-message";
+        empty.textContent = "No comments yet. Be the first!";
+        list.appendChild(empty);
+        return;
+      }
+
+      /*
+       * Show top-level comments first.
+       */
+      const topLevel = comments.filter(function (comment) {
+        return comment.parent_id === null;
+      });
+
+      topLevel.forEach(function (comment) {
+        list.appendChild(makeComment(comment, false));
+
+        /*
+         * Then show replies immediately underneath
+         * their parent.
+         */
+        const replies = comments.filter(function (reply) {
+          return String(reply.parent_id) === String(comment.id);
+        });
+
+        replies.forEach(function (reply) {
+          list.appendChild(makeComment(reply, true));
+        });
+      });
+
+    } catch (error) {
+      console.error(error);
+
+      list.innerHTML = "";
+
+      const errorMessage = document.createElement("p");
+      errorMessage.className = "comments-message";
+      errorMessage.textContent = "Unable to load comments.";
+
+      list.appendChild(errorMessage);
+    }
+  }
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    status.textContent = "Posting...";
+
+    const name = document
+      .getElementById("comment-name")
+      .value
+      .trim();
+
+    const body = document
+      .getElementById("comment-body")
+      .value
+      .trim();
+
+    const parentId = parentInput.value || null;
+
+    try {
+      const response = await fetch("/comments", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          post_id: postId,
+          name: name,
+          body: body,
+          parent_id: parentId
+        })
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          result.error || "Unable to post comment."
+        );
+      }
+
+      form.reset();
+
+      clearReply();
+
+      status.textContent = "Comment posted!";
+
+      await loadComments();
+
+    } catch (error) {
+      console.error(error);
+      status.textContent = error.message;
+    }
+  });
+
+  loadComments();
+})();
+</script>
