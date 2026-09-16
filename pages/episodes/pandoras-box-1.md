@@ -39,7 +39,7 @@ Marty raised his hand, cutting her off. "I'm actually not a tech person. You fig
 
 "I'll take care of it. Go fix the whatever."
 
-  
+<br>
 
 Jamie Garcia was mopping the bathroom floor as slowly and laboriously as possible when her pager buzzed.
 
@@ -65,7 +65,7 @@ Marty didn't have the usual smirk that Jamie was expecting. He was alone, pacing
 
 Jamie pushed the door open, mumbling. "Yeah, if I need help being bossed around."
 
-  
+<br>
 
 Sometimes Jamie wished that more than six people worked at Northline Depot — and given that one of them was Marty, it seemed inevitable that she would get the brunt of the hard work. On the warehouse floor, ten-foot metal bays towered above her, intimidating not only in size but by the amount of labor each one held. The air was hot, dry, and vaguely sticky, filled with the chemical scent of cardboard and detergent. She suddenly regretted being so eager to get off bathroom duty.
 
@@ -95,7 +95,7 @@ Number 847. Of what?
 
 "Shit." Jamie wiped her forehead. "Maybe it's time I take fifteen."
 
-  
+<br>
 
 Marty was still in the break room, typing intensely. As Jamie came in, she wasn't quite sure whether he was still gaming or had finally sat down to help out with the database.
 
@@ -117,7 +117,7 @@ Marty was still in the break room, typing intensely. As Jamie came in, she wasn'
 
 Marty turned to her blankly. "The number 847, huh?" Finally, he sighed and shut his laptop. "Alright, if it's that important then bring it here. Use the cart if you can't lift it."
 
-  
+<br>
 
 A couple minutes later, Jamie was back, straining with the weight of the box in her arms. Nora was back in the break room, frustratedly attempting to get through to Marty.
 
