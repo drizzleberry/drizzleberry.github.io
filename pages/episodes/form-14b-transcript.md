@@ -9,7 +9,7 @@ date: 2026 Oct 10
 « <a href="/2/">Previous</a> | Episode 3 | <a href="/4/">Next</a> »
 </div>
 
-<a href="/3/transcript/" style="text-align: center;">Document View</a>
+<a href="/3/transcript/" style="margin: auto; text-align: center;">Document View</a>
 
 # Northline Depot Form 14B — Item Safety and Handling Document
 
