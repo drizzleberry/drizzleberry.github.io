@@ -87,7 +87,7 @@ She took observations carefully but quickly, as the object would soon overflow t
 
 <br>
 
-Marty flipped briskly through the paper records binder, trying not to let his hands sweat, not that he had control over it. He scanned the page like a trained machine and entered some more information into a spreadsheet on his desktop screen, before tossing the binder to the side into a pile with three others.
+Marty flipped briskly through the paper records binder, trying not to let his hands sweat, not that he had control over it. He scanned the page like a trained machine and entered some more information on his desktop, before tossing the binder to the side into a pile with three others.
 
 "I should have a bit more data," he muttered. "Enough to extrapolate." He didn't have a lot of time, but it'd be enough for now. Everything was just fine. He scrolled up and down absentmindedly, scanning over his proud work — a spreadsheet, much more organized than he was used to for this job. Headings bolded, values sorted, his minimal knowledge of Excel formulas putting in work. Income: unit rentals, transport services, special considerations, premiums, fees, slimming down via resale. Expenses: utilties, maintenance, wages, insurance, taxes… rent.
 
