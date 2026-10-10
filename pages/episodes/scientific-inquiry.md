@@ -71,9 +71,11 @@ She vaguely felt the odd scent of the liquid, unsettling but not overpowering. S
 
 Jamie jotted down her observations in her notepad app, and continued her experiments. She adapted, improvised with new procedures: testing for melting point with the microwave and thermometer, chemical acidity using the baking soda, polarity by emptying a coffee machine sugar packet into the fluid to see if it would dissolve. She visited the break room, the office, the maintenance closet, and the parking lot in her quest for scientific knowledge. Each time, she would add to her notes, compiling and editing and revising the observations she'd collected on #847.
 
+<br>
+
 > Test 19. Exposure to solar rays.
 
-This one was behind the building, by the crevice where the bulky green dumpsters stood. The outside of the Northline warehouse had that dull gray color of concrete and steel, exactly the same as the other dozens of rectangular industrial buildings it neighbored.
+This test was being conducted behind the building, by the crevice where the bulky green dumpsters stood. The outside of the Northline warehouse had that dull gray color of concrete and steel, exactly the same as the other dozens of rectangular industrial buildings it neighbored.
 
 Item number 847 itself was in the aluminum tub, which Jamie placed carefully on the sun-scorched concrete ground. As the heat of afternoon light washed over the side of her face, she watched it do the same to the object. The spongey, black orb seemed to be melting, liquifying like butter in a pan — as it did, it frothed and gushed out its slimy greige liquid like a bursted pipe.
 
