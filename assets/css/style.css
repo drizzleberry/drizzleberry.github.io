@@ -148,14 +148,6 @@ button div.theme-toggle {
   right: 1rem;
 }
 
-blockquote, 
-div.blockquote {
-  font-style: italic;
-  width: 90%
-  margin: 1em 1em auto;
-  background-color: var(--blockquote-bg);
-}
-
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -171,6 +163,17 @@ a:visited {
 
 a:not([href]) {
   color: var(--link-nonexistent);
+}
+
+/* PAGE DIVS */
+
+blockquote, 
+div.blockquote {
+  font-style: italic;
+  width: 80%
+  margin: 1.5em 1.5em auto;
+  padding: 1em;
+  background-color: var(--blockquote-bg);
 }
 
 /* MOBILE VIEW */
