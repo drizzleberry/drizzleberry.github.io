@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: episode
 title: Form 14B
 permalink: /3/transcript/
 date: 2026 Oct 10
