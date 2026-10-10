@@ -1,6 +1,6 @@
 ---
 layout: episode
-title: Form 14B
+title: Form 14B Transcript
 permalink: /3/transcript/
 date: 2026 Oct 10
 ---
