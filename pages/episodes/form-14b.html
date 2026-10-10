@@ -8,36 +8,34 @@ date: 2026 Oct 10
 <div id="pdf-pages"></div>
 <a href="/3/transcript/">Accessiblity Transcript</a>
 
-<script>
-  import * as pdfjsLib from "pdfjs-dist";
-  import pdfWorker from "pdfjs-dist/build/pdf.worker.mjs?url";
-  
-  pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
-  
+<script type="module">
+  import * as pdfjsLib from
+    "{{ '/assets/pdfjs/build/pdf.mjs' | relative_url }}";
+
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    "{{ '/assets/pdfjs/build/pdf.worker.mjs' | relative_url }}";
+
   const container = document.querySelector("#pdf-pages");
-  
+
   async function showPdf(url) {
     const pdf = await pdfjsLib.getDocument(url).promise;
-  
+
     for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
       const page = await pdf.getPage(pageNum);
-  
-      // Fit the page to the container's width.
       const baseViewport = page.getViewport({ scale: 1 });
       const scale = container.clientWidth / baseViewport.width;
       const viewport = page.getViewport({ scale });
-  
+
       const canvas = document.createElement("canvas");
       const context = canvas.getContext("2d");
       const outputScale = window.devicePixelRatio || 1;
-  
+
       canvas.width = Math.floor(viewport.width * outputScale);
       canvas.height = Math.floor(viewport.height * outputScale);
       canvas.style.width = `${viewport.width}px`;
       canvas.style.height = `${viewport.height}px`;
-  
       container.appendChild(canvas);
-  
+
       await page.render({
         canvasContext: context,
         viewport,
@@ -47,6 +45,6 @@ date: 2026 Oct 10
       }).promise;
     }
   }
-  
-  showPdf("/assets/files/form-14b.pdf");
+
+  showPdf("{{ '/assets/files/form-14b.pdf' | relative_url }}");
 </script>
