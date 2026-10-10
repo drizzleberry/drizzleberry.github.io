@@ -20,7 +20,7 @@ Internal documentation is required of any serious working establishment.
 
 Jamie takes study of #847 into her own hands, while Marty faces the reality of Northline's finances. 
 
-**Episode 5:** [After Hours](/5/)
+**Episode 5:** *[After Hours](/5/)*
 
 Nora doesn't mind working overtime until 1 am. Really, it's no problem.
 
