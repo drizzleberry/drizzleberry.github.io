@@ -11,6 +11,8 @@ date: 2026 Oct 10
 
 <a href="/3/transcript/" style="display: block; text-align: center;">Document View</a>
 
+\[Editor Note: Visual meaning is captioned in square brackets. Spelling errors are intentional.\]
+
 # Northline Depot Form 14B — Item Safety and Handling Document
 
 Form is to be filled out for any items requiring special considerations while in storage. For internal use only.
@@ -37,7 +39,7 @@ Form is to be filled out for any items requiring special considerations while in
 
 **Quantity:** \[Jamie's Handwriting:\] 1
 
-**Weight:** \[Jamie's Handwriting:\] Unknown. Less than one pound kilogram. (2.5 oz is a guess we put for the name)
+**Weight:** \[Jamie's Handwriting:\] Unknown. Less than one ~~pound~~ kilogram. (2.5 oz is a guess we put for the name)
 
 **Dimensions:** \[Jamie's Handwriting:\] About the size of a tennis ball, so around 6 centimeters ish
 
@@ -105,7 +107,7 @@ The current plan is to take the liquid waste and ship it to a waste management c
 
 ---
 
-**Section 6. Additional Information**
+## Section 6. Additional Information
 
 Fill out as needed.
 
