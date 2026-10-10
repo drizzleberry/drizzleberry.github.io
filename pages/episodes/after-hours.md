@@ -26,6 +26,7 @@ Her customer-facing duties consisted of calling Marty if there was a new client,
 <blockquote style="font-style: italic;">
 >Win + R
 
+
 \>event vwr.msc
 </blockquote>
 
@@ -37,6 +38,7 @@ She rubbed her eyes, the sound of her fingers typing in rhythm with footsteps an
 <blockquote style="font-style: italic;">
 >Event ID 4624
 
+
 \>Logon Type 13: Remote Connection
 
 \>Impersonation Level: Anonymous
@@ -47,6 +49,7 @@ About 80% these words carried zero meaning to her. She was just following the in
 <blockquote style="font-style: italic;">
 >An attempt was made to access objects.
 
+
 \>Access to view objects was denied.
 
 \>Access to edit objects was denied.
@@ -56,6 +59,7 @@ Well, never mind.
 
 <blockquote style="font-style: italic;">
 >9 objects were deleted.
+
 
 \>Erased: 5 directories, 274 files.
 
