@@ -112,7 +112,7 @@ The current method of storage/handling will continue until such a time that Obje
 
 \[Marty's Handwriting:\] Thanks for writing this up, Jamie. I'll send this to the office to be digitized - Nora really wants redundant copies of everything after the other day. Signed.
 
-*Marty Kessler*
+Marty Kessler
 
 PS I'm cutting out Section 6 as unnecessary info.
 
