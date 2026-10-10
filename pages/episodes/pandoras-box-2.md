@@ -6,7 +6,7 @@ date: 2026 Sep 10
 ---
 
 <div class="episode-nav">
-« <a href="/1/">Previous</a> | Episode 2 | <a>Next</a> »
+« <a href="/1/">Previous</a> | Episode 2 | <a href="/3/">Next</a> »
 </div>
 
 "It still smells weird in here, Jamie."
