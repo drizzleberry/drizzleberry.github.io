@@ -12,6 +12,18 @@ Northline Depot's database is deleted, and Jamie discovers something she really 
 
 The crew gets together to discuss what to do with Jamie's bizarre discovery.
 
-**Episode 3:** <a><i>Coming October 10</i></a>
+**Episode 3:** [Form 14B](/3/)
+
+Internal documentation is required of any serious working establishment.
+
+**Episode 4:** [Scientific Inquiry](/4/)
+
+Jamie takes study of #847 into her own hands, while Marty faces the reality of Northline's finances. 
+
+**Episode 5:** [After Hours](/5/)
+
+Nora doesn't mind working overtime until 1 am. Really, it's no problem.
+
+
 
 
