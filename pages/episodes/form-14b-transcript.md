@@ -1,3 +1,10 @@
+---
+layout: default
+title: Form 14B
+permalink: /3/transcript/
+date: 2026 Oct 10
+---
+
 <div class="episode-nav">
 « <a href="/2/">Previous</a> | Episode 3 | <a href="/4/">Next</a> »
 </div>
