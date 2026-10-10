@@ -1,0 +1,12 @@
+#pdf-pages {
+  width: min(100%, 900px);
+  margin-inline: auto;
+  padding: 16px;
+}
+
+#pdf-pages canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 16px;
+}

@@ -1,0 +1,58 @@
+---
+layout: episode
+title: Form 14B
+permalink: /3/
+date: 2026 Oct 10
+---
+
+<div class="episode-nav">
+« <a href="/2/">Previous</a> | Episode 3 | <a href="/4/">Next</a> »
+</div>
+
+<a href="/3/transcript/" style="display: block; text-align: center;">Accessiblity Transcript</a>
+<div id="pdf-pages"></div>
+
+<div class="episode-nav">
+« <a href="/2/">Previous</a> | Episode 3 | <a href="/4/">Next</a> »
+</div>
+
+<script type="module">
+  import * as pdfjsLib from
+    "{{ '/assets/pdfjs/build/pdf.mjs' | relative_url }}";
+
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    "{{ '/assets/pdfjs/build/pdf.worker.mjs' | relative_url }}";
+
+  const container = document.querySelector("#pdf-pages");
+
+  async function showPdf(url) {
+    const pdf = await pdfjsLib.getDocument(url).promise;
+
+    for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+      const page = await pdf.getPage(pageNum);
+      const baseViewport = page.getViewport({ scale: 1 });
+      const scale = container.clientWidth / baseViewport.width;
+      const viewport = page.getViewport({ scale });
+
+      const canvas = document.createElement("canvas");
+      const context = canvas.getContext("2d");
+      const outputScale = window.devicePixelRatio || 1;
+
+      canvas.width = Math.floor(viewport.width * outputScale);
+      canvas.height = Math.floor(viewport.height * outputScale);
+      canvas.style.width = `${viewport.width}px`;
+      canvas.style.height = `${viewport.height}px`;
+      container.appendChild(canvas);
+
+      await page.render({
+        canvasContext: context,
+        viewport,
+        transform: outputScale === 1
+          ? null
+          : [outputScale, 0, 0, outputScale, 0, 0],
+      }).promise;
+    }
+  }
+
+  showPdf("{{ '/assets/files/form-14b.pdf' | relative_url }}");
+</script>
