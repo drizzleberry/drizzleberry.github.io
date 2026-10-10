@@ -24,6 +24,6 @@ Jamie takes study of #847 into her own hands, while Marty faces the reality of N
 
 Nora doesn't mind working overtime until 1 am. Really, it's no problem.
 
-**Episode 6:** *[Coming November 10](#)*
+**Episode 6:** <a>Coming November 10</a>
 
 
