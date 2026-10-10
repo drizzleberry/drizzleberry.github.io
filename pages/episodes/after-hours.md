@@ -26,7 +26,7 @@ Her customer-facing duties consisted of calling Marty if there was a new client,
 <blockquote style="font-style: italic;">
 >Win + R
 
->event vwr.msc
+\>event vwr.msc
 </blockquote>
 
 She idly took another little swig, woody alcohol burning down her esophagus, maintaining her carefully-calibrated BAC of 0.138% that conferred a divine state of late-night lucid consciousness. The bottle sat on the table amid a chaotic assortment of printed documents, half-filled out forms, cheap pens, earplugs, sticky notes, empty cups, wires, wrappers, stains, and other bullshit she swept out of her immediate workspace so she could rest her arms.
@@ -37,9 +37,9 @@ She rubbed her eyes, the sound of her fingers typing in rhythm with footsteps an
 <blockquote style="font-style: italic;">
 >Event ID 4624
 
->Logon Type 13: Remote Connection
+\>Logon Type 13: Remote Connection
 
->Impersonation Level: Anonymous
+\>Impersonation Level: Anonymous
 </blockquote>
 
 About 80% these words carried zero meaning to her. She was just following the instructions some anonymous user posted on an old tech help forum seven years ago. People, especially the extroverted kind like Marty, often said she was a confusing type — but whatever aspect of her personality that was directed at, it was clearly pale in comparison to the machinations of whatever sociopath designed the Windows operating system. Apparently it wasn't fashionable to tell her straightforwardly, "your computer got hacked and your database deleted, idiot." Or not — this was all speculation on her end.
@@ -47,9 +47,9 @@ About 80% these words carried zero meaning to her. She was just following the in
 <blockquote style="font-style: italic;">
 >An attempt was made to access objects.
 
->Access to view objects denied.
+\>Access to view objects was denied.
 
->Access to edit objects denied.
+\>Access to edit objects was denied.
 </blockquote>
 
 Well, never mind.
@@ -57,9 +57,9 @@ Well, never mind.
 <blockquote style="font-style: italic;">
 >9 objects were deleted.
 
->Erased: 5 directories, 274 files.
+\>Erased: 5 directories, 274 files.
 
->Handle ID: 0x2172s
+\>Handle ID: 0x2172s
 </blockquote>
 
 While Nora could never exaggerate how subpar her computer skills were, this string of obtusely-written messages quite clearly confirmed her theory. She habitually reached for the bottle. If they had been hacked, which seemed all but confirmed, then what would she do about it anyhow? Transfer all their data to another device, and then maybe throw this desktop into a lake — for a start at least. Marty had finally approved her order for a four-pack of gigabyte USB drives, so she'd have to put those to use whenever they arrived.
