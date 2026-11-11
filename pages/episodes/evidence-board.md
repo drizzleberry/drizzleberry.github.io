@@ -4,6 +4,11 @@ title: Evidence Board
 permalink: /6/
 date: 2026 Nov 10
 ---
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+</style>
+
+
 <div markdown="1">
 <div class="blockquote" style="font-family: 'Fira Sans';">
 
@@ -218,7 +223,7 @@ I think I'm spending too much time on this site
 
 </div>
 
-<div class="blockquote" style="font-family: 'Verdana';">
+<div class="blockquote" style="font-family: 'Trebuchet MS';">
 
 GarageQuestions
 
@@ -233,10 +238,4 @@ I'm dead fucking serious. It was working fine literally two days ago but now it 
 Alright, fuck everything. Nobody can even agree on what the paranormal _is_, and none of this UFO shit is getting me any closer to finding the real stuff. I need a break, maybe I can learn more about object 847 on Monday.
 
 </div>
-</div>
-
-<div style="color: var(--note-color1); margin: 1.5em 1.5em auto;">
-
-Alright, fuck everything. Nobody can even agree on what the paranormal _is_, and none of this UFO shit is getting me any closer to finding the real stuff. I need a break, maybe I can learn more about object 847 on Monday.
-
 </div>
