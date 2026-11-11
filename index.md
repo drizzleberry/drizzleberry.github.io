@@ -24,6 +24,10 @@ Jamie takes study of #847 into her own hands, while Marty faces the reality of N
 
 Nora doesn't mind working overtime until 1 am. Really, it's no problem.
 
-**Episode 6:** <a>Coming November 10</a>
+**Episode 6:** [Evidence Board](/6/)
+
+The Internet is the most advanced research tool ever created.
+
+**Episode 7:** <a>Coming December 10</a>
 
 
