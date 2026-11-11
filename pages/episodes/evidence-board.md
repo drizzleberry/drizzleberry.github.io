@@ -5,13 +5,11 @@ permalink: /6/
 date: 2026 Nov 10
 ---
 
-
 <div class="blockquote" style="font-family: 'Fira Sans';">
+
 The Oakland Microphone
 
 **Mysterious office building draws local attention**
-
-  
 
 One office building along North Prairie Rd has long been the subject of speculation. Most people pay no attention as they drive past it, it seemingly blends in with the other nearby buildings, but if you look closer, you'll find a few strange things. The building has no name or logo plastered on its side, and it never seems to have any cars in its parking lot. Residents in nearby blocks have wondered for many years what this building could be.
 
@@ -29,15 +27,19 @@ Could Oakland really be the home of ghosts? Well, only time will tell.
 
 </div>
 
-<div class="blockquote" style="font-family: 'Verdana';">
-forums.blackroom.net/paranormal/cn940wfn
+<div style="color: var(--note-color1); margin: 1.5em 1.5em auto;">
 
-  
+Website says Oakland is somewhere in Iowa.
+
+</div>
+
+<div class="blockquote" style="font-family: 'Verdana';">
+
+forums.blackroom.net/paranormal/cn940wfn
 
 <span style="color: gray;"> wealthyadvancement9 | 11 months ago </span>
 
-**Actually ran into the Frog man**
-  
+**Actually ran into the Frog man** 
 
 Yes, the Frog man. If you dont live in Indiana it'll sound really fucking stupid, but everyone here says its real. Although which ones are being serious and which are joking I still have no idea, though its probably more of the second half nowadays.
 
@@ -49,8 +51,8 @@ So I find my way back to the highway, and I rode home thinking that was weird, b
 
 </div>
 
-
 <div class="blockquote" style="font-family: sans-serif;">
+
 UFOlogy Wiki
 
 **List of uncategorized extraterrestrial sightings**
@@ -80,7 +82,9 @@ Tags: Midwest US, Central US, last two years, pending full explanation
 </div>
   
 <div style="color: var(--note-color1); margin: 1.5em 1.5em auto;">
+
 Not what I was looking for but maybe worth reading these. Bookmarked this site.
+
 </div>
 
 <div class="blockquote" style="font-family: 'Inter';">
@@ -102,23 +106,19 @@ However, one street lamp seemed all alone, lighting a small side street in a dee
 
 Eric started the camera, and I walked under the lamp. Sure enough, it turned off as I passed under, before flickering back on a few seconds after I walked away. It was almost as if a power outage had happened to the one lamp as I walked beneath it. After a bit more testing, we found out that the light not only didn't respond to inanimate objects and animals moving underneath the lamp post, but it didn't seem to do anything when Eric tried walking under it.
 
-Watch the full video here!
-
-  
+<span style="text-decoration: underline;"> Watch the full video here! </span>
 
 Explanation: We found that the lamp only reacts to certain individuals with a specific energy channel in their neurons. The frequency from the brain's natural electric field interacts with the lamp post to prevent the circuit from producing light. Most street lights are made resistant to disturbance by human brain electric frequencies, but this one was most likely made improperly.
 
 With this explanation, Paradox Investigators marks this case <span style="color: 1D914B;">CLOSED!</span>
-</div>
-  
 
+</div>
 
 <div class="blockquote" style="font-family: 'Helvetica';">
 
 4chan.org/x/
 
 **Post your true creepy stories**
-
   
 <div class="blockquote" style="border: solid 1px var(--text-color);">
 Anonymous 17:43 Tue No. 11843729
@@ -141,19 +141,18 @@ Goerge Clooney is alive you mentally stunted fucking chimpanzee
 </div>
   
 <div style="color: var(--note-color1); margin: 1.5em 1.5em auto;">
+
 Obviously this is made up but there could be some truth to this. Its honestly the closest thing to what im looking for
+
 </div>
 
 <div class="blockquote" style="font-family: 'Verdana';">
-forums.blackroom.net/paranormal/bc49wfin
 
-  
+forums.blackroom.net/paranormal/bc49wfin
 
 <span style="color: gray;"> OralOracle7×7 | 3 years ago </span>
 
 ** \[LEAK\] First look at government Sasquatch documents **
-
-  
 
 Edit: No, I didn't find these. The files were leaked in an IRC chat by a known reliable community member, and I forwarded them here.
 
@@ -162,17 +161,20 @@ Okay, I want to lead this by saying I am NOT suicidal and I do NOT ever plan on 
 The rumors of the 'Bigfoot docs' have been circulating for like three years now, and it's my honor to announce that they have finally been found. There's over one hundred document scans, emails, photos, and videos in here from what they call the Federal Abnormalities Commission. Attached below.
 
 sasquatchdocs.zip \[42 KB\]
+
 </div>
   
 <div style="color: var(--note-color1); margin: 1.5em 1.5em auto;">
+
 This is 100% a zip bomb, and there's no way the "Federal Abnormalities Commission" is real. but this guy posts a lot so I trust him enough to save the page
+
 </div>
 
+<div class="blockquote" style="font-family: 'Verdana';"
 
 AskReddit
 
 **What's one paranormal experience you had that you know is real?**
-
 
 <span style="color: #fa5700;"> u/electricasschecks </span>
 
@@ -184,20 +186,19 @@ Even though he was basically zoned out during the whole day, at night he would a
 
 I didn't think it was too weird as a kid, but when I was like twelve-ish I decided to see what the big deal with the book is. It was open on his desk. And there was nothing on the page. I flipped forward a few pages — nothing. Then, finally I flipped back to the first pages, and I saw that all of the ink was in dark red, the color you get from dried blood. He caught me shortly after, screamed his fucking head off like never before, and that's when I realized the blood dripping out of his nose and mouth. I stopped wanting to go to his house after that. My grandpa's been gone seven years now, and someone else owns his house now. But I still think about that fucking book and how it was drinking his fucking blood."
 
-  
-
 <span style="color: #fa5700;"> u/Frigid\_Tempo </span>
 
 Wasn't this the plot of a Goosebumps story
 
 <div style="color: var(--note-color1); margin: 1.5em 1.5em auto;">
+
 I think this is actually really close to what Im looking for. Unfortunately this looks like a dead end for now.
+
 </div>
 
 <div class="blockquote" style="font-family: 'Verdana';">
-forums.blackroom.net/paranormal/3vhw40p
 
-  
+forums.blackroom.net/paranormal/3vhw40p
 
 <span style="color: gray;"> baaasher33 | 2 months ago </span>
 
@@ -205,27 +206,30 @@ forums.blackroom.net/paranormal/3vhw40p
 
 Hopefully I don't sound insane when I say this, but there's a photo that I was looking at while scrolling in my camera roll. I got up to piss and came back to my pc, but as I walked in I realized that the photo was still looking at me. Like yeah that makes sense from the front angle, because the person in the photo is looking at the camera. But, this happened when I was like six feet away and at a diagonal angle. Moved around, the eyes in the photo follow me. Printed it out, same effect from all angles. Did I discover a new phenomenon?
 
-  
-
 <span style="color: gray;"> troubled\_traveler | 2 months ago </span>
 
 OP are you a fucking dumbass
+
 </div>
   
+<div style="color: var(--note-color1); margin: 1.5em 1.5em auto;">
 
 I think I'm spending too much time on this site
 
+</div>
 
 <div class="blockquote" style="font-family: 'Verdana';">
+
 GarageQuestions
 
 **There's a poltergeist in my car**
 
-  
-
 I'm dead fucking serious. It was working fine literally two days ago but now it doesn't start. I change the gas, nothing. I change the oil, the car starts moaning - and I use that word on purpose. I tried looking under the hood, and it goes AWOOOGA like some fucking 1960s cartoon. Swallowed my pride and took it to a mechanic and he has no fucking idea. I am actually being fucked with by a poltergeist it's not funny.
+
 </div>
 
 <div style="color: var(--note-color1); margin: 1.5em 1.5em auto;">
+
 Alright, fuck everything. Nobody can even agree on what the paranormal _is_, and none of this UFO shit is getting me any closer to finding the real stuff. I need a break, maybe I can learn more about object 847 on Monday.
+
 </div>
