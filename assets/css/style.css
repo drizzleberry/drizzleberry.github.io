@@ -18,6 +18,7 @@
   --username-color: #5dd4a7;
   --title-underline: #eee;
   --button-border: #444;
+  --note-color1: #edae07;
 }
 
 /* PAGE STYLE OVERALL */
@@ -49,6 +50,7 @@ body.light-mode {
   --username-color: #18694a;
   --title-underline: #111;
   --button-border: #f9f9f9;
+  --note-color1: #c90808;
 }
 
 #main-content {
