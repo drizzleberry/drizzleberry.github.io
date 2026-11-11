@@ -4,7 +4,7 @@ title: Evidence Board
 permalink: /6/
 date: 2026 Nov 10
 ---
-
+<div markdown="1">
 <div class="blockquote" style="font-family: 'Fira Sans';">
 
 The Oakland Microphone
@@ -110,7 +110,7 @@ Eric started the camera, and I walked under the lamp. Sure enough, it turned off
 
 Explanation: We found that the lamp only reacts to certain individuals with a specific energy channel in their neurons. The frequency from the brain's natural electric field interacts with the lamp post to prevent the circuit from producing light. Most street lights are made resistant to disturbance by human brain electric frequencies, but this one was most likely made improperly.
 
-With this explanation, Paradox Investigators marks this case <span style="color: 1D914B;">CLOSED!</span>
+With this explanation, Paradox Investigators marks this case <span style="color: #1D914B;">CLOSED!</span>
 
 </div>
 
@@ -170,7 +170,7 @@ This is 100% a zip bomb, and there's no way the "Federal Abnormalities Commissio
 
 </div>
 
-<div class="blockquote" style="font-family: 'Verdana';"
+<div class="blockquote" style="font-family: 'Verdana';">
 
 AskReddit
 
@@ -226,6 +226,13 @@ GarageQuestions
 
 I'm dead fucking serious. It was working fine literally two days ago but now it doesn't start. I change the gas, nothing. I change the oil, the car starts moaning - and I use that word on purpose. I tried looking under the hood, and it goes AWOOOGA like some fucking 1960s cartoon. Swallowed my pride and took it to a mechanic and he has no fucking idea. I am actually being fucked with by a poltergeist it's not funny.
 
+</div>
+
+<div style="color: var(--note-color1); margin: 1.5em 1.5em auto;">
+
+Alright, fuck everything. Nobody can even agree on what the paranormal _is_, and none of this UFO shit is getting me any closer to finding the real stuff. I need a break, maybe I can learn more about object 847 on Monday.
+
+</div>
 </div>
 
 <div style="color: var(--note-color1); margin: 1.5em 1.5em auto;">
